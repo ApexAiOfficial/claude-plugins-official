@@ -21,5 +21,11 @@ Marketplace renamed so Claude Code / Codex accept it from a non-upstream source
 |---|---|---|
 | `.claude-plugin/marketplace.json` | `claude-plugins-official` | `apex-claude-plugins` |
 
+Pinned dependencies (exact versions instead of `@latest`, so a runtime only changes when apex/stable does):
+
+| File | Upstream | ApexAI | Basis |
+|---|---|---|---|
+| `external_plugins/playwright/.mcp.json` | `@playwright/mcp@latest` | `@playwright/mcp@0.0.83` | version the workstation was running successfully on 2026-10-15 (npx cache 2026-09-29) |
+
 Plugin and skill names are unchanged. Each component keeps its own upstream license
 and terms; see the component's LICENSE file.
